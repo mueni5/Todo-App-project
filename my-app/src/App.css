@@ -1,0 +1,41 @@
+reset {
+	margin: 10;
+	padding: 30PX;
+	border: none;
+	outline: none;
+	background: transparent;
+}
+
+transition {
+	transition: all 0.2s ease;
+	-webkit-transition: all 0.2s ease;
+}
+
+body {
+	background: hsl(184, 78%, 47%);
+	margin-top: 2rem;
+}
+.tasker {
+	max-width: 600px;
+	margin: 10 auto;
+}
+input {
+    margin-right: 10px;
+    margin-bottom: 10;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  font-family: verdana;
+  font-size: 20px;
+}
+.center {
+  text-align: center;
+  border: 20px solid rgb(32, 34, 32);
+}
+
+
