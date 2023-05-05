@@ -1,21 +1,22 @@
 import React, { useEffect, useState } from 'react';
 
-function Homepage({todos, setTodos}) {
+function Homepage({ todos, setTodos }) {
   
   const [title, setTitle] = useState('');
   const [category, setCategory] = useState('');
   useEffect(() => {
-    fetch("http://localhost:3000/tasks")
+    fetch('http://localhost:3000/tasks')
       .then(response => response.json())
       .then(data => setTodos(data))
       .catch(error => console.log('error', error));
-  }, []);
+  }, [setTodos]);
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     const newTodo = {
       title,
       category,
-      completed: false,
+      completed: true,
     };
     const response = await fetch('http://localhost:3000/tasks', {
       method: 'POST',
@@ -30,12 +31,15 @@ function Homepage({todos, setTodos}) {
       setTodos([...todos, newTodo]);
     }
   };
-  const handleTitleChange = (e) =>{
-    setTitle(e.target.value)
-  }
-  const handleCategoryChange = (e) =>{
-    setCategory(e.target.value)
-  }
+  
+  const handleTitleChange = (e) => {
+    setTitle(e.target.value);
+  };
+  
+  const handleCategoryChange = (e) => {
+    setCategory(e.target.value);
+  };
+  
   return (
     <div>
       <h2>Todo APP</h2>
@@ -59,10 +63,10 @@ function Homepage({todos, setTodos}) {
           />
         </div>
         <button type="submit">Add Todo</button>
-        <button type="submit">Delete</button>
+        <button type="button" onClick={() => setTodos([])}>Delete All</button>
       </form>
-      </div>
-  )
-  }
+    </div>
+  );
+}
 
-  export default Homepage;
+export default Homepage;

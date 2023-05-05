@@ -150,6 +150,48 @@
       "category": "",
       "completed": false,
       "id": 26
+    },
+    {
+      "title": "",
+      "category": "",
+      "completed": false,
+      "id": 27
+    },
+    {
+      "title": "",
+      "category": "",
+      "completed": false,
+      "id": 28
+    },
+    {
+      "title": "learn react",
+      "category": "",
+      "completed": false,
+      "id": 29
+    },
+    {
+      "title": "learn react",
+      "category": "",
+      "completed": false,
+      "id": 30
+    },
+    {
+      "title": "Do laundry",
+      "category": "",
+      "completed": false,
+      "id": 31
+    },
+    {
+      "title": "go for vacation",
+      "category": "",
+      "completed": false,
+      "id": 32
+    },
+    {
+      "title": "learn react",
+      "category": "",
+      "completed": true,
+      "id": 33
     }
   ]
 }

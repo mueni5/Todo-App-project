@@ -2,13 +2,13 @@ import React from "react";
 
 
 
-    function Todos ({ todo }){
+    function Todos ({ todos }){
 
         return (
             <div>
                 <h2>Todos:</h2>
                 <ul>
-                 {todo?.map(todo => (
+                 {todos.map(todo => (
               <li key={todo.id}>
                 <h3>{todo.title}</h3>
                 <p>Category: {todo.category}</p>

@@ -15,8 +15,9 @@ function App() {
        <Navbar />
           <Routes>
         
-              <Route path='/' element={<Homepage/>} />
-              <Route path='/todos' element={<Todos todos={todos} setTodos={setTodos} />} />
+              <Route path='/' element={<Homepage todos={todos} setTodos={setTodos}/>} />
+              <Route path='/todos' element={<Todos todos={todos} />} />
+
               
 
 
